@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IT+kFeTc5fxxR2MO5TVqgE8xplxXjvkhz2GEqbgcx+YzN0rUILlRMBGgNPHRqoLYDTjxy5NDMFLihOBXl+Qqqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nicolas\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Nicolas\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
