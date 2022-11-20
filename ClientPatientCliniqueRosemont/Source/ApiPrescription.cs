@@ -1,5 +1,6 @@
 ﻿using ClientPatientCliniqueRosemont.Models;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace ClientCsharpCliniqueRosemont.Source
 {
@@ -31,5 +32,16 @@ namespace ClientCsharpCliniqueRosemont.Source
             }
             return prescriptions;
         }
+
+        public async Task<bool> AddMedicalInformation(PrescriptionModel pres)
+        {
+            var prescriptionJson = JsonConvert.SerializeObject(pres);
+            var contenu = new StringContent(prescriptionJson, Encoding.UTF8, "application/json");
+            var reponse = await _httpClient.PostAsync(_url + "/Prescription/Add", contenu);
+            return reponse.IsSuccessStatusCode;
+
+        }
+
+
     }
 }
