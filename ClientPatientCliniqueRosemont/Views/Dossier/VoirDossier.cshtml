@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model dynamic
+
+@{
+    List<PrescriptionModel> PresModel = Model.Prescription;
+    PatientModel PatModel = Model.Patient;
+}
+<head>
+    <link rel="stylesheet" href="~/css/StyleDossier.css" />
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="column">
+                <h2>Nom</h2>
+                <p>@PatModel.Nom</p>
+                <h2>Prenom</h2>
+                <p>@PatModel.Prenom</p>
+                <h2>Date de naissance</h2>
+                <p>@PatModel.Ddn</p>
+                <h2>Age</h2>
+                <p>@PatModel.Age</p>
+                <h2>Allegies</h2>
+                <p>@PatModel.Allergies</p>
+                <h2>Courriel</h2>
+                <p>@PatModel.Email</p>
+            </div>
+            <div class="columntwo">
+                @foreach (var m in PresModel)
+                {
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Prescription</h2>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h3>Prescription</h3>
+                                <p>@m.Description</p>
+                            </div>
+                            <div>
+                                <h3>Note</h3>
+                                <p>@m.Notes</p>
+                            </div>
+                            <div>
+                                <h3>Reference</h3>
+                                <p>@m.References</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                }
+            </div>
+            <div>
+                <div class="text-primary"></div>
+            </div>
+        </div>
+    </div>
+</body>

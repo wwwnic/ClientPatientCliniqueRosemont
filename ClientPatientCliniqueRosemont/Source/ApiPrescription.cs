@@ -17,5 +17,19 @@ namespace ClientCsharpCliniqueRosemont.Source
             }
             return prescription;
         }
+
+        public async Task<List<PrescriptionModel>> GetPrescriptionByPatientIdAsync(int id)
+        {
+            var uri = _url + "/Prescription/GetByPatientId?id=" + id;
+
+            var reponse = await _httpClient.GetAsync(uri);
+            List<PrescriptionModel> prescriptions = new List<PrescriptionModel>();
+            if (reponse.IsSuccessStatusCode)
+            {
+                var reponseJson = await reponse.Content.ReadAsStringAsync();
+                prescriptions = JsonConvert.DeserializeObject<List<PrescriptionModel>>(reponseJson);
+            }
+            return prescriptions;
+        }
     }
 }
