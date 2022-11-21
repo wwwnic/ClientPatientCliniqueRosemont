@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "Inscription";
+}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Patient</title>
+    <link rel="stylesheet" href="~/css/InscriptionPatient.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Inscription</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nom</span>
+                        <input type="text" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Prenom</span>
+                        <input type="text" placeholder="Enter votre prenom" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date de Naissance</span>
+                        <input type ="date" placeholder="Entrez votre date de naissance" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="text" placeholder="Entrez votre age" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mot de passe</span>
+                        <input type="text" placeholder="Entrez votre mot de passe" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Valider mot de passe</span>
+                        <input type="text" placeholder="Confirmer votre mot de passe" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Sexe</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Homme</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Femme</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Je préfère ne pas dire</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Confirmer">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

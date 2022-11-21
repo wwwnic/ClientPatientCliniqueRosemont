@@ -20,5 +20,18 @@ namespace ClientPatientCliniqueRosemont.Source
             return patient;
         }
 
+        public async Task<PatientModel> AjouterPatient(UtilisateurModel model)
+        {
+            var uri = _url + "/Patient/Add?id=" + model;
+            var reponse = await _httpClient.GetAsync(uri);
+            PatientModel patient = new PatientModel();
+            if (reponse.IsSuccessStatusCode)
+            {
+                var reponseJson = await reponse.Content.ReadAsStringAsync();
+                patient = JsonConvert.DeserializeObject<PatientModel>(reponseJson);
+            }
+            return patient;
+        }
+
     }
 }
