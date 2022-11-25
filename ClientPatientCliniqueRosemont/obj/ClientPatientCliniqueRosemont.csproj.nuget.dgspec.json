@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicolas Lazarte\\OneDrive - Collège de Rosemont\\Bureau\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj": {}
+    "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicolas Lazarte\\OneDrive - Collège de Rosemont\\Bureau\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj": {
+    "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicolas Lazarte\\OneDrive - Collège de Rosemont\\Bureau\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj",
+        "projectUniqueName": "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj",
         "projectName": "ClientPatientCliniqueRosemont",
-        "projectPath": "C:\\Users\\Nicolas Lazarte\\OneDrive - Collège de Rosemont\\Bureau\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj",
-        "packagesPath": "C:\\Users\\Nicolas Lazarte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicolas Lazarte\\OneDrive - Collège de Rosemont\\Bureau\\client-natif\\ClientPatientCliniqueRosemont\\obj\\",
+        "projectPath": "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\client-natif\\ClientPatientCliniqueRosemont\\ClientPatientCliniqueRosemont.csproj",
+        "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicolas\\Desktop\\ClientPatientCliniqueRosemont\\client-natif\\ClientPatientCliniqueRosemont\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nicolas Lazarte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

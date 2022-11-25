@@ -8,49 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClientPatientCliniqueRosemont
 build_property.RootNamespace = ClientPatientCliniqueRosemont
-build_property.ProjectDir = C:\Users\Nicolas Lazarte\OneDrive - Collège de Rosemont\Bureau\client-natif\ClientPatientCliniqueRosemont\
+build_property.ProjectDir = C:\Users\Nicolas\Desktop\ClientPatientCliniqueRosemont\client-natif\ClientPatientCliniqueRosemont\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Nicolas Lazarte\OneDrive - Collège de Rosemont\Bureau\client-natif\ClientPatientCliniqueRosemont
+build_property.MSBuildProjectDirectory = C:\Users\Nicolas\Desktop\ClientPatientCliniqueRosemont\client-natif\ClientPatientCliniqueRosemont
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Dossier/VoirDossier.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Authentification/VoirConnexion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGlmaWNhdGlvblxWb2lyQ29ubmV4aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Dossier/VoirDossier.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9zc2llclxWb2lyRG9zc2llci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Dossier/VoirFormulaireAjouterPrescription.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Dossier/VoirFormulaireAjouterPrescription.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9zc2llclxWb2lyRm9ybXVsYWlyZUFqb3V0ZXJQcmVzY3JpcHRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Home/Index.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Connexion.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Connexion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbm5leGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Error.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Inscription.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Shared/Inscription.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluc2NyaXB0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/_ViewImports.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/_ViewStart.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/OneDrive - Collège de Rosemont/Bureau/client-natif/ClientPatientCliniqueRosemont/Views/Shared/_Layout.cshtml]
+[C:/Users/Nicolas/Desktop/ClientPatientCliniqueRosemont/client-natif/ClientPatientCliniqueRosemont/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-29yruwd222
