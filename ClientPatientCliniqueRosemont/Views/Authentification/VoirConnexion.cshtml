@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<head>
+    <link rel="stylesheet" href="~/css/StyleDossier.css" />
+</head>
+<body>
+
+<h1>Login</h1>
+<div class="row">
+    <div class="column"></div>
+
+    <div class="column">
+            @if (ViewBag?.messageErreur != null)
+            {
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <strong>@ViewBag.messageErreur</strong>
+            </div>
+            }
+            <form type="post">
+                <div class="form-group row">
+                    <label for="Id" class="col-4 col-form-label">Id</label>
+                    <div class="col-8">
+                        <input id="Id" name="Id" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-4 col-form-label">Mot de passe</label>
+                    <div class="col-8">
+                        <input id="password" name="password" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-4 col-8">
+                        <button asp-controller="Authentification" asp-action="SeConnecter" class="btn btn-primary btn-lg center">Se connecter</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+
+    <div class="column"></div>
+</div>
+</body>
