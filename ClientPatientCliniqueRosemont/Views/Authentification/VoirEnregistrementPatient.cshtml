@@ -1,0 +1,82 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/StyleDossier.css" />
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column">
+                <form>
+                    <div class="form-group row">
+                        <label for="nom" class="col-4 col-form-label">Nom</label>
+                        <div class="col-8">
+                            <input id="Nom" name="Nom" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="Prenom" class="col-4 col-form-label">Prenom</label>
+                        <div class="col-8">
+                            <input id="Prenom" name="Prenom" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="email" class="col-4 col-form-label">Email</label>
+                        <div class="col-8">
+                            <input id="email" name="email" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="Password" class="col-4 col-form-label">Password</label>
+                        <div class="col-8">
+                            <input id="Password" name="Password" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="ddn" class="col-4 col-form-label">Date de naissance</label>
+                        <div class="col-8">
+                            <input id="Ddn" name="Ddn" placeholder="jj-mm-aaaa" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="Age" class="col-4 col-form-label">Age</label>
+                        <div class="col-8">
+                            <input id="Age" name="Age" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="sexe" class="col-4 col-form-label">Sexe</label>
+                        <div class="col-8">
+                            <input id="Sexe" name="Sexe" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <label for="Allergies" class="col-4 col-form-label">Allergies</label>
+                        <div class="col-8">
+                            <textarea id="Allergies" name="Allergies" cols="40" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <button asp-controller="Authentification" asp-action="EnregistrementPatient" class="btn btn-primary btn-lg center">Soumettre</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+                <div class="column"></div>
+
+                            </div>
+    </div>
+</body>

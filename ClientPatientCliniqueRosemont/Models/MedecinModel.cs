@@ -12,7 +12,6 @@ namespace ClientPatientCliniqueRosemont.Models
 
         public string Prenom { get; set; } = "no first name";
 
-        [JsonIgnore]
         public string Password { get; set; }
 
         public string Email { get; set; } = "no email";

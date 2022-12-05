@@ -34,8 +34,9 @@ namespace ClientPatientCliniqueRosemont.Controllers
             var connexionEstReussi = await apiConn.Connexion(utilisateurPotentiel);
             if (connexionEstReussi)
             {
+                ViewBag.message = "Connexion du patient réussi";
                 HttpContext.Session.SetInt32("id", id);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("VoirDossier", "Dossier");
             }
             else
             {
@@ -44,5 +45,33 @@ namespace ClientPatientCliniqueRosemont.Controllers
             }
         }
 
+        public IActionResult VoirEnregistrementPatient()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> EnregistrementPatient(string nom, string prenom, string email, string password, string ddn, string age, string sexe, string allergies)
+        {
+            var apiConn = new ApiPatient();
+            var patient = new PatientModel()
+            {
+                Password = password,
+                Nom = nom,
+                Prenom = prenom,
+                Email = email,
+                Ddn = ddn,
+                Age = int.Parse(age),
+                Sexe = sexe,
+                Allergies = allergies
+            };
+            await apiConn.AjouterPatient(patient);
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("id");
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

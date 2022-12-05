@@ -21,9 +21,15 @@ namespace ClientPatientCliniqueRosemont.Controllers
 
         public async Task<IActionResult> VoirDossier(int id)
         {
+            if (!HttpContext.Session.GetInt32("id").HasValue)
+            {
+                return RedirectToAction("Index", "Home");
+
+            }
+            var idsession = id == 0 ? HttpContext.Session.GetInt32("id").Value : id;
             dynamic mymodel = new ExpandoObject();
-            mymodel.Prescription = await API_PRES.GetPrescriptionByPatientIdAsync(id);
-            mymodel.Patient = await API_PAT.GetPatientByIdAsync(id);
+            mymodel.Prescription = await API_PRES.GetPrescriptionByPatientIdAsync(idsession);
+            mymodel.Patient = await API_PAT.GetPatientByIdAsync(idsession);
             return View(mymodel);
         }
 

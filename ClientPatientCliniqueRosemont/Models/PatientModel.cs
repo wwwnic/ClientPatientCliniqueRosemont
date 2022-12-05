@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
 namespace ClientPatientCliniqueRosemont.Models
@@ -11,14 +12,13 @@ namespace ClientPatientCliniqueRosemont.Models
 
         public string Prenom { get; set; }
 
-        [JsonIgnore]
         public string Password { get; set; }
 
         public string Email { get; set; }
 
         public string Ddn { get; set; }
 
-        public string Age { get; set; }
+        public int Age { get; set; }
 
         public string Sexe { get; set; }
 

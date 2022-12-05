@@ -2,6 +2,7 @@
 using ClientPatientCliniqueRosemont.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Text;
 
 namespace ClientPatientCliniqueRosemont.Source
 {
@@ -20,18 +21,14 @@ namespace ClientPatientCliniqueRosemont.Source
             return patient;
         }
 
-        public async Task<PatientModel> AjouterPatient(UtilisateurModel model)
+        public async Task<bool> AjouterPatient(PatientModel model)
         {
-            var uri = _url + "/Patient/Add?id=" + model;
-            var reponse = await _httpClient.GetAsync(uri);
-            PatientModel patient = new PatientModel();
-            if (reponse.IsSuccessStatusCode)
-            {
-                var reponseJson = await reponse.Content.ReadAsStringAsync();
-                patient = JsonConvert.DeserializeObject<PatientModel>(reponseJson);
-            }
-            return patient;
-        }
+            var uri = _url + "/Patient/add";
 
+            var UtilJson = JsonConvert.SerializeObject(model);
+            var contenu = new StringContent(UtilJson, Encoding.UTF8, "application/json");
+            var reponse = await _httpClient.PutAsync(uri, contenu);
+            return reponse.IsSuccessStatusCode;
+        }
     }
 }
