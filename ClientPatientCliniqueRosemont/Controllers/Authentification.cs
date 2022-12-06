@@ -64,8 +64,44 @@ namespace ClientPatientCliniqueRosemont.Controllers
                 Sexe = sexe,
                 Allergies = allergies
             };
-            await apiConn.AjouterPatient(patient);
-            return RedirectToAction("Index", "Home");
+            var inscriptionReussi = await apiConn.AjouterPatient(patient);
+            if (inscriptionReussi)
+            {
+                ViewBag.message = "Inscription du patient réussi";
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ViewBag.messageErreur = "Erreur lors de l'inscription du patient, veuillez réesayer à nouveau";
+                return View("VoirEnregistrementPatient");
+            }
+        }
+        public IActionResult VoirEnregistrementMedecin()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> EnregistrementMedecin(string nom, string prenom, string email, string password)
+        {
+            var apiConn = new ApiMedecin();
+            var medecin = new MedecinModel()
+            {
+                Password = password,
+                Nom = nom,
+                Prenom = prenom,
+                Email = email,
+            };
+            var inscriptionReussi = await apiConn.AjouterMedecin(medecin);
+            if (inscriptionReussi)
+            {
+                ViewBag.message = "Inscription du medecin réussi";
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ViewBag.messageErreur = "Erreur lors de l'inscription du medecin, veuillez réesayer à nouveau";
+                return View("VoirEnregistrementMedecin");
+            }
         }
 
         public IActionResult Logout()

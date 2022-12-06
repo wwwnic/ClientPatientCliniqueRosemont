@@ -2,6 +2,36 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(/images/clinique.jpg);
+    background-size: cover;
+}
+
+.wrapper{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: lightslategray;
+    border-radius: 10px;
+    text-align:center;
+    box-shadow: 0 20px;
+}
+
+.formulaire {
+    width: 375px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: lightslategray;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px;
+}
+
+.col-4 col-form-label {
+    font-size: 5rem;
+    color: #07001f;
+    margin-bottom 1.1rem;
+}
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;

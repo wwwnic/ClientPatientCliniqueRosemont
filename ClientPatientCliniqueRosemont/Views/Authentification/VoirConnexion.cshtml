@@ -2,15 +2,16 @@
 @{
     ViewData["Title"] = "Login";
 }
+<html>
 <head>
     <link rel="stylesheet" href="~/css/StyleDossier.css">
 </head>
 <body>
 <center>
-<h1>Login</h1>
+<h1>Connexion Patient</h1>
+<br />
 <div class="row">
     <div class="column"></div>
-
     <div class="column">
             @if (ViewBag?.messageErreur != null)
             {
@@ -18,17 +19,23 @@
                 <strong>@ViewBag.messageErreur</strong>
             </div>
             }
+            <div class="wrapper">
             <form type="post">
+                 
                 <div class="form-group row">
                     <label for="Id" class="col-4 col-form-label">Id</label>
                     <div class="col-8">
-                        <input id="Id" name="Id" type="text" class="form-control">
+                        <input id="Id" name="Id" type="text" class="form-control" placeholder="ID Patient">
                     </div>
                 </div>
+                <br />
+                <br />
                 <div class="form-group row">
                     <label for="password" class="col-4 col-form-label">Mot de passe</label>
                     <div class="col-8">
-                        <input id="password" name="password" type="text" class="form-control">
+                        <input id="password" name="password" type="text" class="form-control" placeholder="Password">
+                                <i class="bi bi-eye-slash"
+                                   id="togglePassword"></i>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -38,9 +45,27 @@
                     </div>
                 </div>
             </form>
+            </div>
     </center>
-    </div>
+     <script>
+        const togglePassword = document
+            .querySelector('#togglePassword');
 
-    <div class="column"></div>
-</div>
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', () => {
+
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+
+            password.setAttribute('type', type);
+
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi-eye');
+        });
+    </script>
 </body>
+</html>

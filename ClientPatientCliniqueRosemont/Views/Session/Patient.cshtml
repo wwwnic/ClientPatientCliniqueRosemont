@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Patient";
+}
+
+<h3>Bienvenue @ViewBag.Id</h3>
+<h3>Votre mot de passe: @ViewBag.Password</h3>
+<a asp-controller="patient" asp-action="logout">Deconnexion</a>
+
+<div class="text-center">
+    <h1 class="display-4">Mon dossier patient</h1>
+    <br />
+    <a asp-controller="Dossier" asp-action="VoirDossier" asp-route-id="1">Voir mes prescriptions</a>
+</div>
