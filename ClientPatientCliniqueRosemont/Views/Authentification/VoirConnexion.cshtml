@@ -4,11 +4,12 @@
 }
 <html>
 <head>
-    <link rel="stylesheet" href="~/css/StyleDossier.css">
+    <link rel="stylesheet" href="~/css/StyleForm.css">
 </head>
 <body>
 <center>
 <h1>Connexion Patient</h1>
+</center>
 <br />
 <div class="row">
     <div class="column"></div>
@@ -19,7 +20,7 @@
                 <strong>@ViewBag.messageErreur</strong>
             </div>
             }
-            <div class="wrapper">
+            <div>
             <form type="post">
                  
                 <div class="form-group row">
@@ -33,7 +34,7 @@
                 <div class="form-group row">
                     <label for="password" class="col-4 col-form-label">Mot de passe</label>
                     <div class="col-8">
-                        <input id="password" name="password" type="text" class="form-control" placeholder="Password">
+                        <input id="password" name="password" type="password" class="form-control" placeholder="Password">
                                 <i class="bi bi-eye-slash"
                                    id="togglePassword"></i>
                     </div>
@@ -41,12 +42,12 @@
                 <div class="form-group row">
                     <div class="offset-4 col-8">
                         <br />
-                        <button asp-controller="Authentification" asp-action="SeConnecter" class="btn btn-primary btn-lg center">Se connecter</button>
+                                <button asp-controller="Authentification" asp-action="SeConnecter" class="btn btn-secondary btn-lg center">Se connecter</button>
                     </div>
                 </div>
             </form>
             </div>
-    </center>
+    </écenter>
      <script>
         const togglePassword = document
             .querySelector('#togglePassword');

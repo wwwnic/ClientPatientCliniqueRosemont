@@ -2,18 +2,19 @@
     box-sizing: border-box;
 }
 
-body{
+body {
+    color: white;
     background-image: url(/images/clinique.jpg);
     background-size: cover;
 }
 
-.wrapper{
+.wrapper {
     width: 330px;
     padding: 2rem 1rem;
     margin: 50px auto;
-    background-color: lightslategray;
+    background-color: #66e0ff;
     border-radius: 10px;
-    text-align:center;
+    text-align: center;
     box-shadow: 0 20px;
 }
 
@@ -21,7 +22,7 @@ body{
     width: 375px;
     padding: 2rem 1rem;
     margin: 50px auto;
-    background-color: lightslategray;
+    background-color: #66e0ff;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 20px;

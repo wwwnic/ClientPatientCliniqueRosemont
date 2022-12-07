@@ -5,7 +5,7 @@
 }
 <html>
 <head>
-    <link rel="stylesheet" href="~/css/StyleDossier.css" />
+    <link rel="stylesheet" href="~/css/StyleForm.css" />
 </head>
 <body>
     <center>
@@ -16,52 +16,43 @@
         <div class="row">
             <div class="column"></div>
             <div class="column">
-                <div class="formulaire"
-                     @if (ViewBag?.messageErreur != null)
-                     {
-            <div class="alert alert-danger" role="alert">
-                <strong>@ViewBag.messageErreur</strong>
-            </div>
-            }
                 <form>
                     <div class="form-group row">
                         <label for="Nom" class="col-4 col-form-label">Nom</label>
                         <div class="col-8">
-                            <input id="Nom" name="Nom" type="text" class="form-control" placeholder="Nom">
+                            <input id="Nom" name="Nom" placeholder="Nom" type="text" class="form-control" required="required">
                         </div>
                     </div>
                     <br />
                     <div class="form-group row">
                         <label for="Prenom" class="col-4 col-form-label">Prenom</label>
                         <div class="col-8">
-                            <input id="Prenom" name="Prenom" type="text" class="form-control" placeholder="Prenom">
+                            <input id="Prenom" name="Prenom" placeholder="Prenom" type="text" class="form-control" required="required">
                         </div>
                     </div>
                     <br />
                     <div class="form-group row">
-                        <label for="email" class="col-4 col-form-label">Email</label>
+                        <label for="Email" class="col-4 col-form-label">Email</label>
                         <div class="col-8">
-                            <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+                            <input id="Email" name="Email" placeholder="Email" type="text" class="form-control" required="required">
                         </div>
                     </div>
                     <br />
                     <div class="form-group row">
-                        <label for="Password" class="col-4 col-form-label">Password</label>
+                        <label for="password" class="col-4 col-form-label">Mot de passe</label>
                         <div class="col-8">
-                            <input id="Password" name="Password" type="text" class="form-control" placeholder="Password">
+                            <input id="password" name="password" placeholder="Mot de passe" type="password" class="form-control" required="required">
                         </div>
                     </div>
                     <br />
                     <div class="form-group row">
                         <div class="offset-4 col-8">
-                        <button asp-controller="Authentification" asp-action="EnregistrementMedecin" class="btn btn-primary btn-lg center">Se connecter</button>
+                            <button asp-controller="Authentification" asp-action="EnregistrementMedecin" class="btn btn-secondary btn-lg center">Soumettre</button>
                         </div>
                     </div>
                 </form>
-                </div>
             </div>
             <div class="column"></div>
-
         </div>
     </div>
 </body>
