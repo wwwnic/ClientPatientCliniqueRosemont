@@ -8,7 +8,7 @@ namespace ClientCsharpCliniqueRosemont.Source
     {
         public async Task<PrescriptionModel> GetPrescriptionByIdAsync(int id)
         {
-            var uri = _url + "/Prescription/GetById?id=" + id;
+            var uri = _url + "/api/Prescription/" + id;
             var reponse = await _httpClient.GetAsync(uri);
             PrescriptionModel prescription = new PrescriptionModel();
             if (reponse.IsSuccessStatusCode)
@@ -21,7 +21,7 @@ namespace ClientCsharpCliniqueRosemont.Source
 
         public async Task<List<PrescriptionModel>> GetPrescriptionByPatientIdAsync(int id)
         {
-            var uri = _url + "/Prescription/GetByPatientId?id=" + id;
+            var uri = _url + "/api/Prescription/ByPatientId/" + id;
 
             var reponse = await _httpClient.GetAsync(uri);
             List<PrescriptionModel> prescriptions = new List<PrescriptionModel>();
@@ -35,9 +35,7 @@ namespace ClientCsharpCliniqueRosemont.Source
 
         public async Task<bool> AddMedicalInformation(PrescriptionModel pres)
         {
-            var prescriptionJson = JsonConvert.SerializeObject(pres);
-            var contenu = new StringContent(prescriptionJson, Encoding.UTF8, "application/json");
-            var reponse = await _httpClient.PostAsync(_url + "/Prescription/Add", contenu);
+            var reponse = await _httpClient.PostAsJsonAsync(_url + "/api/Prescription", pres);
             return reponse.IsSuccessStatusCode;
 
         }

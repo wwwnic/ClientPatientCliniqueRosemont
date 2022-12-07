@@ -10,7 +10,7 @@ namespace ClientPatientCliniqueRosemont.Source
     {
         public async Task<PatientModel> GetPatientByIdAsync(int id)
         {
-            var uri = _url + "/Patient/GetById?id=" + id;
+            var uri = _url + "/api/Patient/id/" + id;
             var reponse = await _httpClient.GetAsync(uri);
             PatientModel patient = new PatientModel();
             if (reponse.IsSuccessStatusCode)
@@ -23,12 +23,13 @@ namespace ClientPatientCliniqueRosemont.Source
 
         public async Task<bool> AjouterPatient(PatientModel model)
         {
-            var uri = _url + "/Patient/add";
-
-            var UtilJson = JsonConvert.SerializeObject(model);
-            var contenu = new StringContent(UtilJson, Encoding.UTF8, "application/json");
-            var reponse = await _httpClient.PutAsync(uri, contenu);
+            var uri = _url + "/api/Patient";
+            var reponse = await _httpClient.PostAsJsonAsync(uri, model);
             return reponse.IsSuccessStatusCode;
         }
     }
+
+
+
 }
+

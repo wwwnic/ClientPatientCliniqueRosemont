@@ -11,11 +11,9 @@ namespace ClientPatientCliniqueRosemont.Source
     {
         public async Task<bool> AjouterMedecin(MedecinModel model)
         {
-            var uri = _url + "/Medecin/add";
+            var uri = _url + "/api/Medecin";
 
-            var UtilJson = JsonConvert.SerializeObject(model);
-            var contenu = new StringContent(UtilJson, Encoding.UTF8, "application/json");
-            var reponse = await _httpClient.PutAsync(uri, contenu);
+            var reponse = await _httpClient.PostAsJsonAsync(uri, model);
             return reponse.IsSuccessStatusCode;
         }
 

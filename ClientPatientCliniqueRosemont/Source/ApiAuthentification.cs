@@ -9,11 +9,8 @@ namespace ClientPatientCliniqueRosemont.Source
     {
         public async Task<bool> Connexion(UtilisateurModel util)
         {
-            var uri = _url + "/Patient/Login";
-
-            var UtilJson = JsonConvert.SerializeObject(util);
-            var contenu = new StringContent(UtilJson, Encoding.UTF8, "application/json");
-            var reponse = await _httpClient.PostAsync(uri, contenu);
+            var uri = _url + "/api/Authentification/Patient";
+            var reponse = await _httpClient.PostAsJsonAsync(uri, util);
             var estConnecte = false;
             if (reponse.IsSuccessStatusCode)
             {
