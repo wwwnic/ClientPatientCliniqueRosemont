@@ -29,6 +29,9 @@ Ce projet a été développé dans le cadre d'un cours au cegep visant à mettre
 
 ![Information](/photos/Information.jpg)
 
+### * L'objectif de cette application était de démontrer ma capacité à envoyer et recevoir des données d'un api
+
+
 ## Installation
 
 Suivez les instructions ci-dessous pour configurer et exécuter ce projet sur votre machine locale.
