@@ -11,6 +11,24 @@ Ce projet a été développé dans le cadre d'un cours au cegep visant à mettre
 - **Authentification** : Permet aux patients de se connecter à l'application pour consulter leurs prescriptions.
 - **Consultation des prescriptions** : Permet aux patients de consulter leurs prescriptions une fois connectés.
 
+## Aperçu
+
+### Page de connexion
+
+![Connexion](/photos/Connexion.jpg)
+
+### Inscription pour medecin
+
+![Formulaire médecin](/photos/Formulaire%20medecin.jpg)
+
+### Inscription pour patient
+
+![Formulaire patient](/photos/Formulaire%20patient.jpg)
+
+### Page d'information
+
+![Information](/photos/Information.jpg)
+
 ## Installation
 
 Suivez les instructions ci-dessous pour configurer et exécuter ce projet sur votre machine locale.
